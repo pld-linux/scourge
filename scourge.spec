@@ -26,10 +26,9 @@ characters to search for treasure, kill enemies, gain levels, etc.
 
 %description -l pl
 S.C.O.U.R.G.E. jest tekstow± gr± RPG z trójwymiarowym interfejsem
-u¿ytkownika utrzyman± w tradycji NetHacka i Mori. Gra pozwala grupie
-czterech charakterów na poszukiwanie skarbu, zabijanie przeciwników,
+u¿ytkownika utrzyman± w tradycji NetHacka i Morii. Gra pozwala grupie
+czterech osób na poszukiwanie skarbu, zabijanie przeciwników,
 zdobywanie poziomów, itp.
-
 
 %prep
 %setup -q
