@@ -7,7 +7,6 @@ License:	GPL v2
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/scourge/%{name}-%{version}.tar.gz
 # Source0-md5:	ec3c89aebe0a2c6302261ba04d4e3080
-# Source0-size:	6070670
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://scourge.sourceforge.net/
