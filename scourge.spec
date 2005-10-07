@@ -1,14 +1,13 @@
 Summary:	Rogue-like game with a 3D user interface
 Summary(pl):	Tekstowa gra RPG z trójwymiarowym interfejsem u¿ytkownika
 Name:		scourge
-Version:	0.9
+Version:	0.11
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/scourge/%{name}-%{version}.tar.gz
-# Source0-md5:	7f2842366991451e2ada23d409c2705c
+# Source0-md5:	d214ceeceb3ed8bdf72360dccc0a870f
 Source1:	%{name}.desktop
-Source2:	%{name}.png
 URL:		http://scourge.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel >= 1.2.7
@@ -28,13 +27,13 @@ tradition of NetHack and Moria. The game allows a group of four
 characters to search for treasure, kill enemies, gain levels, etc.
 
 %description -l pl
-S.C.O.U.R.G.E. jest tekstow± gr± RPG z trójwymiarowym interfejsem
-u¿ytkownika utrzyman± w tradycji NetHacka i Morii. Gra pozwala grupie
+S.C.O.U.R.G.E. jest gr± roguelike z trójwymiarowym interfejsem
+u¿ytkownika, utrzyman± w tradycji NetHacka i Morii. Gra pozwala grupie
 czterech osób na poszukiwanie skarbu, zabijanie przeciwników,
-zdobywanie poziomów, itp.
+zdobywanie poziomów do¶wiadczenia, itp.
 
 %prep
-%setup -q
+%setup -q -n %{name}
 
 %build
 %{__aclocal}
@@ -57,14 +56,14 @@ install -d $RPM_BUILD_ROOT%{_pixmapsdir}
 cp -rf data/* $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
-install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
+install assets/%{name}.png $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README
+%doc AUTHORS README
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_desktopdir}/%{name}.desktop
