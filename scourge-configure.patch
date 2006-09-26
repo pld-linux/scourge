@@ -1,0 +1,20 @@
+--- scourge-0.15/scourge/configure.in~	2006-08-18 06:26:43.000000000 +0200
++++ scourge-0.15/scourge/configure.in	2006-09-26 10:31:58.000000000 +0200
+@@ -336,14 +336,14 @@
+ 	
+ 	AC_MSG_CHECKING([for wx-config library])
+ 	
+-	AC_PATH_PROG(WXWIDGET, wx-config, no)
++	AC_PATH_PROG(WXWIDGET, $WXWIDGET, no)
+ 	
+ 	if test "$WXWIDGET" = "no"; then
+ 	  AC_MSG_ERROR(Cannot find wxwidget: Will not build editor)
+ 	  have_WXWIDGET=no
+ 	else
+-	  WXWIDGET_CFLAGS=`wx-config --cflags`
+-	  WXWIDGET_LIBS=`wx-config --libs`
++	  WXWIDGET_CFLAGS=`$WXWIDGET --cflags`
++	  WXWIDGET_LIBS=`$WXWIDGET --libs`
+ 	  have_WXWIDGET=yes
+ 	fi
+ 	
