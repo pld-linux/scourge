@@ -18,9 +18,6 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 BuildRequires:	wxGTK2-devel
-Requires:	SDL >= 1.2.7
-Requires:	SDL_mixer >= 1.2
-Requires:	SDL_net >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
