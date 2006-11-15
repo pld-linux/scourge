@@ -43,7 +43,8 @@ zdobywanie poziomów do¶wiadczenia, itp.
 %{__autoheader}
 %{__automake}
 
-%configure WXWIDGET=wx-gtk2-ansi-config \
+%configure \
+	WXWIDGET=wx-gtk2-ansi-config \
 	--with-data-dir=%{_datadir}/%{name}
 %{__make}
 
