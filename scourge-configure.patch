@@ -1,5 +1,5 @@
---- scourge-0.15/scourge/configure.in~	2006-08-18 06:26:43.000000000 +0200
-+++ scourge-0.15/scourge/configure.in	2006-09-26 10:31:58.000000000 +0200
+--- scourge/configure.in~	2006-11-12 22:00:54.000000000 +0100
++++ scourge/configure.in	2006-11-15 20:45:16.000000000 +0100
 @@ -336,14 +336,14 @@
  	
  	AC_MSG_CHECKING([for wx-config library])
