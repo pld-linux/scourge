@@ -1,16 +1,16 @@
 Summary:	Rogue-like game with a 3D user interface
 Summary(pl):	Tekstowa gra RPG z trójwymiarowym interfejsem u¿ytkownika
 Name:		scourge
-Version:	0.16
-Release:	0.1
+Version:	0.17
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/scourge/%{name}-%{version}.src.tar.gz
-# Source0-md5:	02025e62a7261d39d3bac2d3351088b3
+# Source0-md5:	2ff3dac4b5b8bdc1af526fb5917ad383
 Source1:	http://dl.sourceforge.net/scourge/%{name}-%{version}.data.tar.gz
-# Source1-md5:	123888b1465f4c6e9a9f4b4b58cbca26
-Source2:	%{name}.desktop
+# Source1-md5:	5f41657ec0593a5994b21ae01705b5fb
 Patch0:		%{name}-configure.patch
+Patch1:		%{name}-desktop.patch
 URL:		http://scourge.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel >= 1.2.7
@@ -36,6 +36,7 @@ zdobywanie poziomów do¶wiadczenia, itp.
 %prep
 %setup -q -n %{name} -a 1
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__aclocal}
@@ -50,15 +51,14 @@ zdobywanie poziomów do¶wiadczenia, itp.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_desktopdir}}
-install -d $RPM_BUILD_ROOT%{_pixmapsdir}
+install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 cp -rf %{name}_data/* $RPM_BUILD_ROOT%{_datadir}/%{name}
 
-install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}
+install assets/%{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}
 install assets/%{name}.png $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
