@@ -6,7 +6,7 @@ Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/scourge/%{name}-%{version}.src.tar.gz
-# Source0-md5:	2ff3dac4b5b8bdc1af526fb5917ad383
+# Source0-md5:	4d2c599d93036b2fd399b0babf30192e
 Source1:	http://dl.sourceforge.net/scourge/%{name}-%{version}.data.tar.gz
 # Source1-md5:	5f41657ec0593a5994b21ae01705b5fb
 Patch0:		%{name}-configure.patch
