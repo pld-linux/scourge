@@ -1,5 +1,5 @@
 Summary:	Rogue-like game with a 3D user interface
-Summary(pl):	Tekstowa gra RPG z trÛjwymiarowym interfejsem uøytkownika
+Summary(pl.UTF-8):   Tekstowa gra RPG z tr√≥jwymiarowym interfejsem u≈ºytkownika
 Name:		scourge
 Version:	0.17
 Release:	1
@@ -27,11 +27,11 @@ S.C.O.U.R.G.E. is a Rogue-like game with a 3D user interface in fine
 tradition of NetHack and Moria. The game allows a group of four
 characters to search for treasure, kill enemies, gain levels, etc.
 
-%description -l pl
-S.C.O.U.R.G.E. jest gr± roguelike z trÛjwymiarowym interfejsem
-uøytkownika, utrzyman± w tradycji NetHacka i Morii. Gra pozwala grupie
-czterech osÛb na poszukiwanie skarbu, zabijanie przeciwnikÛw,
-zdobywanie poziomÛw do∂wiadczenia, itp.
+%description -l pl.UTF-8
+S.C.O.U.R.G.E. jest grƒÖ roguelike z tr√≥jwymiarowym interfejsem
+u≈ºytkownika, utrzymanƒÖ w tradycji NetHacka i Morii. Gra pozwala grupie
+czterech os√≥b na poszukiwanie skarbu, zabijanie przeciwnik√≥w,
+zdobywanie poziom√≥w do≈õwiadczenia, itp.
 
 %prep
 %setup -q -n %{name} -a 1
