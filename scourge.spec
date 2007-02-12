@@ -1,5 +1,5 @@
 Summary:	Rogue-like game with a 3D user interface
-Summary(pl.UTF-8):   Tekstowa gra RPG z trójwymiarowym interfejsem użytkownika
+Summary(pl.UTF-8):	Tekstowa gra RPG z trójwymiarowym interfejsem użytkownika
 Name:		scourge
 Version:	0.17
 Release:	1
