@@ -11,7 +11,7 @@ Source1:	http://dl.sourceforge.net/scourge/%{name}-%{version}.data.tar.gz
 # Source1-md5:	fb0b18654f4e00a5bee3be25bf1a9c7f
 Patch0:		%{name}-configure.patch
 Patch1:		%{name}-desktop.patch
-URL:		http://scourge.sourceforge.net/
+URL:		http://scourgeweb.org/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel >= 1.2.7
 BuildRequires:	SDL_mixer-devel >= 1.2
