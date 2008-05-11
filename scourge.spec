@@ -1,14 +1,14 @@
 Summary:	Rogue-like game with a 3D user interface
 Summary(pl.UTF-8):	Tekstowa gra RPG z trójwymiarowym interfejsem użytkownika
 Name:		scourge
-Version:	0.19
+Version:	0.20
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/scourge/%{name}-%{version}.src.tar.gz
-# Source0-md5:	03126a6e8edeecb8fb53165570921834
+# Source0-md5:	f7e90f60d60925b117e9dc1a848548d3
 Source1:	http://dl.sourceforge.net/scourge/%{name}-%{version}.data.tar.gz
-# Source1-md5:	fb0b18654f4e00a5bee3be25bf1a9c7f
+# Source1-md5:	45ca5a98487146b1e8ecab8637bf74ad
 Patch0:		%{name}-configure.patch
 Patch1:		%{name}-desktop.patch
 URL:		http://scourgeweb.org/
@@ -39,7 +39,7 @@ zdobywanie poziomów doświadczenia, itp.
 %patch1 -p1
 
 %build
-%{__aclocal}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
