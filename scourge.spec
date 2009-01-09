@@ -29,8 +29,8 @@ characters to search for treasure, kill enemies, gain levels, etc.
 
 %description -l pl.UTF-8
 S.C.O.U.R.G.E. jest grą roguelike z trójwymiarowym interfejsem
-użytkownika, utrzymaną w tradycji NetHacka i Morii. Gra pozwala grupie
-czterech osób na poszukiwanie skarbu, zabijanie przeciwników,
+użytkownika, utrzymaną w tradycji NetHacka i Morii. Gra pozwala
+grupie czterech osób na poszukiwanie skarbu, zabijanie przeciwników,
 zdobywanie poziomów doświadczenia, itp.
 
 %prep
