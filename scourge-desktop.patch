@@ -1,15 +1,22 @@
---- scourge/assets/scourge.desktop~	2007-01-09 06:43:56.000000000 +0100
-+++ scourge/assets/scourge.desktop	2007-01-10 23:10:24.000000000 +0100
-@@ -3,9 +3,11 @@
- Type=Application
- Encoding=UTF-8
+--- scourge/assets/scourge.desktop~	2009-01-09 16:02:07.000000000 +0100
++++ scourge/assets/scourge.desktop	2009-01-09 16:02:02.000000000 +0100
+@@ -1,14 +1,15 @@
+ [Desktop Entry]
  Name=S.C.O.U.R.G.E.: Heroes of Lesser Renown
+ Name[de]=S.C.O.U.R.G.E.: Helden geringeren Ruhms
++Name[pl]=S.C.O.U.R.G.E.: Bohaterowie Niższej Sławy
+ Type=Application
+-GenericName=Roguelike 3D game
+-GenericName[de]=Rogue-artiges 3D-Spiel
 -Comment=A 3D, roguelike game of not quite epic proportions.
-+Comment=Rogue-like game with 3D interface
-+Comment[pl]=Tekstowa gra RPG z trójwymiarowym interfejsem
+-Comment[de]= Ein Rogue-artiges 3D-Spiel von nicht ganz so epischem Ausmaß.
++Comment=Roguelike 3D game.
++Comment[de]=Rogue-artiges 3D-Spiel.
++Comment[pl]=Trójwymiarowa gra typu roguelike.
  TryExec=scourge
  Exec=scourge
- Categories=Game;RolePlaying
- Icon=scourge.png
+ Icon=scourge
+ Terminal=false
+ Encoding=UTF-8
+ Categories=Game;ArcadeGame;RolePlaying;
 +# vi: encoding=utf-8
- 
